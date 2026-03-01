@@ -1,3 +1,23 @@
+# ==========================================
+# GhostShare Protocol - Git Bouncer 
+# ==========================================
+
+# 1. Compiled Class files
+*.class
+
+# 2. Log files
+*.log
+
+# 3. Package Files (Heavy Binaries - Strictly Restricted)
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.exe
+
+# 4. Maven Output (Kachra aur Build files)
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -6,12 +26,19 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
-.mvn/timing.properties
-# https://maven.apache.org/wrapper/#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
+# 5. IDE Specific Folders (Developer Machine specific)
+.idea/
+*.iml
+.vscode/
 .classpath
+.project
+.settings/
+
+# 6. GhostShare Custom Output Folders
+OutputEXE/
+make_ghost.bat
+
+# 7. OS Generated Files
+Thumbs.db
+.DS_Store
